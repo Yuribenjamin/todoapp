@@ -17,11 +17,11 @@ class Todoapp extends Component {
          * using .map() to produces an elements
          */
         let items = this.props.tasks.map((x,y) =>{
-            return <li key={y}><span>{x}</span><button onClick={this.remove}>x</button></li>
+            return <li className='todo-list-item' key={y}><span className='todo-details'>{x}</span><button className='todoapp-remove' onClick={this.remove}>x</button></li>
         });
         return (
-            <div>
-                <ol>
+            <div className='showing-todoapp'>
+                <ol className='todo-list'>
                     {items}
                 </ol>
             </div>

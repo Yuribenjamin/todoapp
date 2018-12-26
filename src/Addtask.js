@@ -20,8 +20,8 @@ class Addtask extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.justsubmitted}>
-                    <input placeholder='Add Tasks...' type="text"></input>
+                <form className='list-todoapp-top' onSubmit={this.justsubmitted}>
+                    <input className='search-todoapp' placeholder='Add Task - Press Enter' type="text"></input>
                 </form>
             </div>
         );

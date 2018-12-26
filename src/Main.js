@@ -39,8 +39,8 @@ class Main extends Component {
 
     render() {
         return (
-            <div>
-                <div><h1>Todo App</h1></div>
+            <div className='list-todoapp'>
+                
                 <Addtask updateList={this.updateList}/>
                 {/**
                 * pass tasksLists as props

@@ -5,7 +5,7 @@ import './App.css';
 /**
  * Array Hold tasks
  */
-let tasksLists = ['task 1', 'task 2'];
+let tasksLists = [];
 
 /**
  * save task to the local storge
@@ -20,7 +20,7 @@ if (tasks) {
 class App extends Component {
   render() {
     return (
-      <div className='todo-container'>
+      <div>
         <Main tasks={tasksLists}/>
       </div>
     );
